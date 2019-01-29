@@ -3,3 +3,4 @@ y = 7
 p = x + y
 q = x - y
 print(p)
+print(q)
