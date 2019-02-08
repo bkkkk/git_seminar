@@ -4,8 +4,6 @@ p = x + y
 q = x - y
 print(p)
 
-
-
 make_pretty_plots <- function(.data) {
 	ggplot(.data, aes(x, y)) + geom_line()
 }
@@ -22,3 +20,5 @@ make_pretty_plots(grab_data())
 
 make_another_pretty_plots(grab_data(other_credentials))
 
+print(q)
+print(x-y)
