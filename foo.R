@@ -10,9 +10,15 @@ make_pretty_plots <- function(.data) {
 	ggplot(.data, aes(x, y)) + geom_line()
 }
 
+make_another_pretty_plots <- function(.data) {
+	ggplot(.data, aes(x, y)) + geom_bar()
+}
+
 grab_data <- function(credentials) {
 	query.execute(credentials)
 }
 
 make_pretty_plots(grab_data())
+
+make_another_pretty_plots(grab_data(other_credentials))
 
