@@ -20,6 +20,10 @@ grab_data <- function(credentials) {
 	query.execute(credentials)
 }
 
+make_a_fourth_pretty_plot <- function(.data) {
+	ggplot(.data, aes(p, y)) + geom_bar()
+}
+
 make_pretty_plots(grab_data())
 
 make_another_pretty_plots(grab_data(other_credentials))
