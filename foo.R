@@ -29,3 +29,4 @@ make_pretty_plots(grab_data())
 make_another_pretty_plots(grab_data(other_credentials))
 
 print(q)
+print(x - y * 2)
