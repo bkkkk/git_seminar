@@ -15,24 +15,3 @@ make_another_pretty_plots <- function(.data) {
 make_a_third_pretty_plot <- function(.data) {
 	ggplot(.data, aes(p, y)) + geom_bar()
 }
-
-grab_data <- function(credentials) {
-	query.execute(credentials)
-}
-
-make_a_fourth_pretty_plot <- function(.data) {
-	ggplot(.data, aes(p, y)) + geom_bar()
-}
-
-make_another_another_plot <- function(.data) {
-	ggplot(.data, aes(p, y)) + geom_bar()
-}
-
-make_pretty_plots(grab_data())
-
-make_another_pretty_plots(grab_data(other_credentials))
-
-make_another_another_plot(grab_data(other_credentials))
-
-print(q)
-print(x - y * 2)
